@@ -75,3 +75,5 @@ fabric.properties
 tmp.*
 *.bak
 
+node_modules/
+dist/
