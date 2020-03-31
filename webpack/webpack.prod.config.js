@@ -14,11 +14,9 @@
  */
 
 const path = require('path');
+const base = require('./webpack.config');
 
-module.exports = {
-    entry: path.resolve(__dirname, '../src/main/javascript/index.js'),
-    output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, '../dist'),
-    },
-};
+// override to production mode
+base.mode = 'production';
+
+module.exports = base;
